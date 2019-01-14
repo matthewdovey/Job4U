@@ -81,6 +81,7 @@
 		9CB2B10F21ED2019003457F3 /* Job4U */ = {
 			isa = PBXGroup;
 			children = (
+				9CB2B13621ED3519003457F3 /* ViewComponents */,
 				9CB2B13421ED2683003457F3 /* Login */,
 				9CB2B11021ED2019003457F3 /* AppDelegate.h */,
 				9CB2B11121ED2019003457F3 /* AppDelegate.m */,
@@ -109,6 +110,13 @@
 				9CB2B11421ED2019003457F3 /* LoginViewController.m */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		9CB2B13621ED3519003457F3 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
