@@ -84,8 +84,6 @@
 				9CB2B13421ED2683003457F3 /* Login */,
 				9CB2B11021ED2019003457F3 /* AppDelegate.h */,
 				9CB2B11121ED2019003457F3 /* AppDelegate.m */,
-				9CB2B11321ED2019003457F3 /* LoginViewController.h */,
-				9CB2B11421ED2019003457F3 /* LoginViewController.m */,
 				9CB2B11621ED2019003457F3 /* Main.storyboard */,
 				9CB2B11921ED201B003457F3 /* Assets.xcassets */,
 				9CB2B11B21ED201B003457F3 /* LaunchScreen.storyboard */,
@@ -107,6 +105,8 @@
 		9CB2B13421ED2683003457F3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				9CB2B11321ED2019003457F3 /* LoginViewController.h */,
+				9CB2B11421ED2019003457F3 /* LoginViewController.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
