@@ -20,7 +20,19 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqk-sp-Flt" userLabel="BackgroundView">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhN-YP-HYp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="AhN-YP-HYp" firstAttribute="centerY" secondItem="eqk-sp-Flt" secondAttribute="centerY" id="CLM-JH-9a3"/>
+                                    <constraint firstAttribute="trailing" secondItem="AhN-YP-HYp" secondAttribute="trailing" id="TXQ-50-SZD"/>
+                                    <constraint firstItem="AhN-YP-HYp" firstAttribute="leading" secondItem="eqk-sp-Flt" secondAttribute="leading" id="e7V-we-q62"/>
+                                    <constraint firstAttribute="bottom" secondItem="AhN-YP-HYp" secondAttribute="bottom" id="gtE-KJ-3Ip"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
