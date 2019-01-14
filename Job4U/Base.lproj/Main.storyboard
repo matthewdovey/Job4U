@@ -32,7 +32,23 @@
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhN-YP-HYp" userLabel="LoginView">
                                         <rect key="frame" x="0.0" y="347" width="375" height="300"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jS-UX-Lh2" userLabel="LoginButton">
+                                                <rect key="frame" x="168.5" y="50" width="38" height="30"/>
+                                                <state key="normal" title="Login"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-Iq-HFO" userLabel="RegisterButton">
+                                                <rect key="frame" x="159" y="120" width="57" height="30"/>
+                                                <state key="normal" title="Register"/>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="fBd-Iq-HFO" firstAttribute="centerX" secondItem="AhN-YP-HYp" secondAttribute="centerX" id="i25-8W-eXw"/>
+                                            <constraint firstItem="fBd-Iq-HFO" firstAttribute="top" secondItem="5jS-UX-Lh2" secondAttribute="bottom" constant="40" id="rEd-pc-SnC"/>
+                                            <constraint firstItem="5jS-UX-Lh2" firstAttribute="top" secondItem="AhN-YP-HYp" secondAttribute="top" constant="50" id="y8s-HE-hzU"/>
+                                            <constraint firstItem="5jS-UX-Lh2" firstAttribute="centerX" secondItem="AhN-YP-HYp" secondAttribute="centerX" id="yn6-kT-VuV"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
