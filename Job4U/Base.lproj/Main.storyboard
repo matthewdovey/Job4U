@@ -32,38 +32,7 @@
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhN-YP-HYp" userLabel="LoginView">
                                         <rect key="frame" x="0.0" y="347" width="375" height="300"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FHI-SB-0p8" userLabel="LoginTextField">
-                                                <rect key="frame" x="87.5" y="50" width="200" height="40"/>
-                                                <color key="backgroundColor" red="0.1896517683" green="1" blue="0.1932592343" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="s5w-7B-IRd"/>
-                                                    <constraint firstAttribute="height" constant="40" id="tV6-i5-TF2"/>
-                                                </constraints>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Df9-fk-teA" userLabel="RegisterTextField">
-                                                <rect key="frame" x="87.5" y="130" width="200" height="40"/>
-                                                <color key="backgroundColor" red="0.1896517683" green="1" blue="0.1932592343" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="8Lq-t0-5Xn"/>
-                                                    <constraint firstAttribute="height" constant="40" id="m3x-Hu-Rjq"/>
-                                                </constraints>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="Df9-fk-teA" firstAttribute="top" secondItem="FHI-SB-0p8" secondAttribute="bottom" constant="40" id="RwZ-i7-zdE"/>
-                                            <constraint firstItem="FHI-SB-0p8" firstAttribute="centerX" secondItem="AhN-YP-HYp" secondAttribute="centerX" id="a9B-3d-Fhc"/>
-                                            <constraint firstItem="FHI-SB-0p8" firstAttribute="top" secondItem="AhN-YP-HYp" secondAttribute="top" constant="50" id="fLk-UP-W0D"/>
-                                            <constraint firstItem="Df9-fk-teA" firstAttribute="centerX" secondItem="AhN-YP-HYp" secondAttribute="centerX" id="tEB-T7-b1R"/>
-                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Df9-fk-teA" secondAttribute="bottom" constant="20" id="yRa-4n-kat"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
