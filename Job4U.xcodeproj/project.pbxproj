@@ -21,6 +21,8 @@
 		9CB2B16121EE17FF003457F3 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B16021EE17FF003457F3 /* LoginViewModel.m */; };
 		9CB2B16421EE181F003457F3 /* SignInViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B16321EE181F003457F3 /* SignInViewModel.m */; };
 		9CB2B16721EE183A003457F3 /* RegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B16621EE183A003457F3 /* RegisterViewModel.m */; };
+		9CB2B16D21EE76B7003457F3 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B16C21EE76B7003457F3 /* DashboardViewController.m */; };
+		9CB2B17021EE76E6003457F3 /* DashboardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B16F21EE76E6003457F3 /* DashboardViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,10 @@
 		9CB2B16321EE181F003457F3 /* SignInViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInViewModel.m; sourceTree = "<group>"; };
 		9CB2B16521EE182B003457F3 /* RegisterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewModel.h; sourceTree = "<group>"; };
 		9CB2B16621EE183A003457F3 /* RegisterViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewModel.m; sourceTree = "<group>"; };
+		9CB2B16B21EE765D003457F3 /* DashboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		9CB2B16C21EE76B7003457F3 /* DashboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		9CB2B16E21EE76D0003457F3 /* DashboardViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashboardViewModel.h; sourceTree = "<group>"; };
+		9CB2B16F21EE76E6003457F3 /* DashboardViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		9CB2B10F21ED2019003457F3 /* Job4U */ = {
 			isa = PBXGroup;
 			children = (
+				9CB2B16A21EE763E003457F3 /* Dashboard */,
 				9CB2B13621ED3519003457F3 /* ViewComponents */,
 				9CB2B13421ED2683003457F3 /* Login */,
 				9CB2B13E21ED4ABB003457F3 /* Coordinator */,
@@ -178,6 +185,17 @@
 				9CB2B16621EE183A003457F3 /* RegisterViewModel.m */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9CB2B16A21EE763E003457F3 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				9CB2B16B21EE765D003457F3 /* DashboardViewController.h */,
+				9CB2B16C21EE76B7003457F3 /* DashboardViewController.m */,
+				9CB2B16E21EE76D0003457F3 /* DashboardViewModel.h */,
+				9CB2B16F21EE76E6003457F3 /* DashboardViewModel.m */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,9 +300,11 @@
 			files = (
 				9CB2B16121EE17FF003457F3 /* LoginViewModel.m in Sources */,
 				9CB2B11521ED2019003457F3 /* LoginViewController.m in Sources */,
+				9CB2B17021EE76E6003457F3 /* DashboardViewModel.m in Sources */,
 				9CB2B13D21ED389E003457F3 /* LoginButton.m in Sources */,
 				9CB2B16421EE181F003457F3 /* SignInViewModel.m in Sources */,
 				9CB2B12021ED201B003457F3 /* main.m in Sources */,
+				9CB2B16D21EE76B7003457F3 /* DashboardViewController.m in Sources */,
 				9CB2B16721EE183A003457F3 /* RegisterViewModel.m in Sources */,
 				9CB2B14621ED5183003457F3 /* AppCoordinator.m in Sources */,
 				9CB2B15821EE0618003457F3 /* RegisterViewController.m in Sources */,
