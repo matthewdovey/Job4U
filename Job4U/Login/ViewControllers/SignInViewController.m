@@ -12,6 +12,11 @@
 
 @interface SignInViewController ()
 
+@property (nonatomic, strong) NSString *username;
+@property (nonatomic, strong) NSString *password;
+@property (nonatomic, strong) UITextField *usernameTextField;
+@property (nonatomic, strong) UITextField *passwordTextField;
+
 @end
 
 @implementation SignInViewController
@@ -23,6 +28,25 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.view.backgroundColor = [UIColor redColor];
+    self.setup;
+}
+
+- (void)setup {
+    _usernameTextField = [[UITextField alloc] init];
+    _usernameTextField.placeholder = @"Username";
+    _passwordTextField = [[UITextField alloc] init];
+    _passwordTextField.placeholder = @"Password";
+    
+    [self.view addSubview:_usernameTextField];
+    [self.view addSubview:_passwordTextField];
+}
+
+-(void)setupStyling {
+    
+}
+
+- (void)setupConstraints {
+    
 }
 
 @end
