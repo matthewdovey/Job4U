@@ -15,6 +15,6 @@
 
 @implementation SignInViewModel
 
-<#methods#>
+
 
 @end

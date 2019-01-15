@@ -15,6 +15,6 @@
 
 @implementation RegisterViewModel
 
-<#methods#>
+
 
 @end
