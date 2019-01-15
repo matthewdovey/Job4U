@@ -18,6 +18,8 @@
 		9CB2B14621ED5183003457F3 /* AppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B14521ED5183003457F3 /* AppCoordinator.m */; };
 		9CB2B15421EE04AA003457F3 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B15321EE04AA003457F3 /* SignInViewController.m */; };
 		9CB2B15821EE0618003457F3 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B15721EE0618003457F3 /* RegisterViewController.m */; };
+		9CB2B15B21EE1170003457F3 /* SplashScreenCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B15A21EE1170003457F3 /* SplashScreenCoordinator.m */; };
+		9CB2B15E21EE12AB003457F3 /* SplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B15D21EE12AB003457F3 /* SplashScreenViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		9CB2B15521EE04BD003457F3 /* SignInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		9CB2B15621EE0608003457F3 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		9CB2B15721EE0618003457F3 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		9CB2B15921EE115C003457F3 /* SplashScreenCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashScreenCoordinator.h; sourceTree = "<group>"; };
+		9CB2B15A21EE1170003457F3 /* SplashScreenCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashScreenCoordinator.m; sourceTree = "<group>"; };
+		9CB2B15C21EE128F003457F3 /* SplashScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashScreenViewController.h; sourceTree = "<group>"; };
+		9CB2B15D21EE12AB003457F3 /* SplashScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashScreenViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,8 @@
 				9CB2B11B21ED201B003457F3 /* LaunchScreen.storyboard */,
 				9CB2B11E21ED201B003457F3 /* Info.plist */,
 				9CB2B11F21ED201B003457F3 /* main.m */,
+				9CB2B15C21EE128F003457F3 /* SplashScreenViewController.h */,
+				9CB2B15D21EE12AB003457F3 /* SplashScreenViewController.m */,
 			);
 			path = Job4U;
 			sourceTree = "<group>";
@@ -145,6 +153,8 @@
 				9CB2B14321ED4ECD003457F3 /* Coordinator.h */,
 				9CB2B14421ED506B003457F3 /* AppCoordinator.h */,
 				9CB2B14521ED5183003457F3 /* AppCoordinator.m */,
+				9CB2B15921EE115C003457F3 /* SplashScreenCoordinator.h */,
+				9CB2B15A21EE1170003457F3 /* SplashScreenCoordinator.m */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -251,7 +261,9 @@
 			files = (
 				9CB2B11521ED2019003457F3 /* LoginViewController.m in Sources */,
 				9CB2B13D21ED389E003457F3 /* LoginButton.m in Sources */,
+				9CB2B15E21EE12AB003457F3 /* SplashScreenViewController.m in Sources */,
 				9CB2B12021ED201B003457F3 /* main.m in Sources */,
+				9CB2B15B21EE1170003457F3 /* SplashScreenCoordinator.m in Sources */,
 				9CB2B14621ED5183003457F3 /* AppCoordinator.m in Sources */,
 				9CB2B15821EE0618003457F3 /* RegisterViewController.m in Sources */,
 				9CB2B15421EE04AA003457F3 /* SignInViewController.m in Sources */,
