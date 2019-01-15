@@ -6,8 +6,10 @@
 //  Copyright © 2019 Matthew Dovey. All rights reserved.
 //
 
-#ifndef AppCoordinator_h
-#define AppCoordinator_h
+#import <Foundation/Foundation.h>
+#import "Coordinator.h"
 
-
-#endif /* AppCoordinator_h */
+@interface AppCoordinator : NSObject <Coordinator>
+@property (nonatomic, retain) UIViewController *rootViewController;
+- (id)initWithWindow:(UIWindow*)window;
+@end
