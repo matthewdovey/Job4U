@@ -9,5 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface LoginButton : UIButton
+
+// Enum to define button state
+typedef NS_ENUM(NSInteger, ButtonState) {
+    normalState,
+    invertedState
+};
+
 - (id)initWithFrame:(CGRect)frame withBackgroundColor:(UIColor*)backgroundColor;
+- (ButtonState*) buttonState;
+- (void) setButtonState: (ButtonState*)buttonState;
+
 @end

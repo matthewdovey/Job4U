@@ -10,6 +10,8 @@
 
 @interface LoginButton ()
 
+@property (nonatomic, readwrite) ButtonState *currentState;
+
 @end
 
 @implementation LoginButton
@@ -25,6 +27,14 @@
 - (void)createLoginButton:(LoginButton*)button withBackgroundColor:(UIColor*)backgroundColor {
     button.frame = CGRectMake(0, 0, 100, 40);
     button.backgroundColor = backgroundColor;
+}
+
+- (ButtonState*) buttonState {
+    return self.currentState;
+}
+
+- (void) setButtonState:(ButtonState *)newState {
+    self.currentState = newState;
 }
 
 @end
