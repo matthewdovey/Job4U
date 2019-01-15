@@ -6,8 +6,6 @@
 //  Copyright © 2019 Matthew Dovey. All rights reserved.
 //
 
-#ifndef SignInViewModel_h
-#define SignInViewModel_h
+@interface SignInViewModel : NSObject
 
-
-#endif /* SignInViewModel_h */
+@end

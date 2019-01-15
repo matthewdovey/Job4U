@@ -7,3 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SignInViewModel.h"
+
+@interface SignInViewModel ()
+
+@end
+
+@implementation SignInViewModel
+
+<#methods#>
+
+@end

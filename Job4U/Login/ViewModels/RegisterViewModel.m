@@ -7,3 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RegisterViewModel.h"
+
+@interface RegisterViewModel ()
+
+@end
+
+@implementation RegisterViewModel
+
+<#methods#>
+
+@end

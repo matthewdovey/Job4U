@@ -6,8 +6,6 @@
 //  Copyright © 2019 Matthew Dovey. All rights reserved.
 //
 
-#ifndef LoginVoewModel_h
-#define LoginVoewModel_h
+@interface LoginViewModel : NSObject
 
-
-#endif /* LoginVoewModel_h */
+@end

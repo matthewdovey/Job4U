@@ -6,8 +6,6 @@
 //  Copyright © 2019 Matthew Dovey. All rights reserved.
 //
 
-#ifndef RegisterViewModel_h
-#define RegisterViewModel_h
+@interface RegisterViewModel : NSObject
 
-
-#endif /* RegisterViewModel_h */
+@end

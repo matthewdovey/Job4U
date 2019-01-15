@@ -7,3 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LoginViewModel.h"
+
+@interface LoginViewModel ()
+
+@end
+
+@implementation LoginViewModel
+
+<#methods#>
+
+@end
