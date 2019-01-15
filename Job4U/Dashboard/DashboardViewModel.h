@@ -6,8 +6,6 @@
 //  Copyright © 2019 Matthew Dovey. All rights reserved.
 //
 
-#ifndef DashboardViewModel_h
-#define DashboardViewModel_h
+@interface DashboardViewModel : NSObject
 
-
-#endif /* DashboardViewModel_h */
+@end

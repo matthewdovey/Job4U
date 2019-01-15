@@ -7,3 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DashboardViewModel.h"
+
+@interface DashboardViewModel ()
+
+@end
+
+@implementation DashboardViewModel
+
+
+
+@end

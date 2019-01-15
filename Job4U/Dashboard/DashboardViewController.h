@@ -6,8 +6,8 @@
 //  Copyright © 2019 Matthew Dovey. All rights reserved.
 //
 
-#ifndef DashboardViewController_h
-#define DashboardViewController_h
+#import <UIKit/UIKit.h>
 
+@interface DashboardViewController : UIViewController
 
-#endif /* DashboardViewController_h */
+@end
