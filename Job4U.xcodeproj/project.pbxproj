@@ -20,6 +20,9 @@
 		9CB2B15821EE0618003457F3 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B15721EE0618003457F3 /* RegisterViewController.m */; };
 		9CB2B15B21EE1170003457F3 /* SplashScreenCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B15A21EE1170003457F3 /* SplashScreenCoordinator.m */; };
 		9CB2B15E21EE12AB003457F3 /* SplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B15D21EE12AB003457F3 /* SplashScreenViewController.m */; };
+		9CB2B16121EE17FF003457F3 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B16021EE17FF003457F3 /* LoginViewModel.m */; };
+		9CB2B16421EE181F003457F3 /* SignInViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B16321EE181F003457F3 /* SignInViewModel.m */; };
+		9CB2B16721EE183A003457F3 /* RegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B16621EE183A003457F3 /* RegisterViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,12 @@
 		9CB2B15A21EE1170003457F3 /* SplashScreenCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashScreenCoordinator.m; sourceTree = "<group>"; };
 		9CB2B15C21EE128F003457F3 /* SplashScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashScreenViewController.h; sourceTree = "<group>"; };
 		9CB2B15D21EE12AB003457F3 /* SplashScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashScreenViewController.m; sourceTree = "<group>"; };
+		9CB2B15F21EE17E7003457F3 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		9CB2B16021EE17FF003457F3 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		9CB2B16221EE1811003457F3 /* SignInViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInViewModel.h; sourceTree = "<group>"; };
+		9CB2B16321EE181F003457F3 /* SignInViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInViewModel.m; sourceTree = "<group>"; };
+		9CB2B16521EE182B003457F3 /* RegisterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewModel.h; sourceTree = "<group>"; };
+		9CB2B16621EE183A003457F3 /* RegisterViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,12 +137,8 @@
 		9CB2B13421ED2683003457F3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				9CB2B11321ED2019003457F3 /* LoginViewController.h */,
-				9CB2B11421ED2019003457F3 /* LoginViewController.m */,
-				9CB2B15321EE04AA003457F3 /* SignInViewController.m */,
-				9CB2B15521EE04BD003457F3 /* SignInViewController.h */,
-				9CB2B15621EE0608003457F3 /* RegisterViewController.h */,
-				9CB2B15721EE0618003457F3 /* RegisterViewController.m */,
+				9CB2B16821EE1880003457F3 /* ViewControllers */,
+				9CB2B16921EE1920003457F3 /* ViewModels */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -157,6 +162,32 @@
 				9CB2B15A21EE1170003457F3 /* SplashScreenCoordinator.m */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9CB2B16821EE1880003457F3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CB2B11321ED2019003457F3 /* LoginViewController.h */,
+				9CB2B11421ED2019003457F3 /* LoginViewController.m */,
+				9CB2B15521EE04BD003457F3 /* SignInViewController.h */,
+				9CB2B15321EE04AA003457F3 /* SignInViewController.m */,
+				9CB2B15621EE0608003457F3 /* RegisterViewController.h */,
+				9CB2B15721EE0618003457F3 /* RegisterViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9CB2B16921EE1920003457F3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9CB2B15F21EE17E7003457F3 /* LoginViewModel.h */,
+				9CB2B16021EE17FF003457F3 /* LoginViewModel.m */,
+				9CB2B16221EE1811003457F3 /* SignInViewModel.h */,
+				9CB2B16321EE181F003457F3 /* SignInViewModel.m */,
+				9CB2B16521EE182B003457F3 /* RegisterViewModel.h */,
+				9CB2B16621EE183A003457F3 /* RegisterViewModel.m */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,11 +290,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB2B16121EE17FF003457F3 /* LoginViewModel.m in Sources */,
 				9CB2B11521ED2019003457F3 /* LoginViewController.m in Sources */,
 				9CB2B13D21ED389E003457F3 /* LoginButton.m in Sources */,
 				9CB2B15E21EE12AB003457F3 /* SplashScreenViewController.m in Sources */,
 				9CB2B12021ED201B003457F3 /* main.m in Sources */,
 				9CB2B15B21EE1170003457F3 /* SplashScreenCoordinator.m in Sources */,
+				9CB2B16421EE181F003457F3 /* SignInViewModel.m in Sources */,
+				9CB2B12021ED201B003457F3 /* main.m in Sources */,
+				9CB2B16721EE183A003457F3 /* RegisterViewModel.m in Sources */,
 				9CB2B14621ED5183003457F3 /* AppCoordinator.m in Sources */,
 				9CB2B15821EE0618003457F3 /* RegisterViewController.m in Sources */,
 				9CB2B15421EE04AA003457F3 /* SignInViewController.m in Sources */,
