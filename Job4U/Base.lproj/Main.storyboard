@@ -36,10 +36,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jS-UX-Lh2" userLabel="LoginButton">
                                                 <rect key="frame" x="168.5" y="50" width="38" height="30"/>
                                                 <state key="normal" title="Login"/>
+                                                <connections>
+                                                    <action selector="proceedToLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JXP-z5-1RC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBd-Iq-HFO" userLabel="RegisterButton">
                                                 <rect key="frame" x="159" y="120" width="57" height="30"/>
                                                 <state key="normal" title="Register"/>
+                                                <connections>
+                                                    <action selector="proceedToRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2z0-vC-BKK"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

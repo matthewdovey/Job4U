@@ -7,8 +7,12 @@
 //
 
 #import "LoginViewController.h"
+#import "SignInViewController.h"
+#import "RegisterViewController.h"
 
 @interface LoginViewController ()
+
+@property (nonatomic, strong) UIViewController *childViewController;
 
 @end
 
@@ -16,8 +20,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)proceedToLogin:(id)sender {
+    UIViewController *viewController = [[SignInViewController alloc] init];
+    [self displayChildViewController: viewController];
+}
+
+- (IBAction)proceedToRegister:(id)sender {
+    UIViewController *viewController = [[RegisterViewController alloc] init];
+    [self displayChildViewController:viewController];
+}
+
+- (void)displayChildViewController:(UIViewController*)viewController {
+    [self addChildViewController:viewController];
+    viewController.view.frame = self.view.frame;
+    [self.view addSubview:viewController.view];
+    [viewController didMoveToParentViewController:self];
+}
 
 @end
