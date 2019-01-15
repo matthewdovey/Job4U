@@ -130,12 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				9CB2B16821EE1880003457F3 /* ViewControllers */,
-				9CB2B15F21EE17E7003457F3 /* LoginViewModel.h */,
-				9CB2B16021EE17FF003457F3 /* LoginViewModel.m */,
-				9CB2B16221EE1811003457F3 /* SignInViewModel.h */,
-				9CB2B16321EE181F003457F3 /* SignInViewModel.m */,
-				9CB2B16521EE182B003457F3 /* RegisterViewModel.h */,
-				9CB2B16621EE183A003457F3 /* RegisterViewModel.m */,
+				9CB2B16921EE1920003457F3 /* ViewModels */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -170,6 +165,19 @@
 				9CB2B15721EE0618003457F3 /* RegisterViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9CB2B16921EE1920003457F3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9CB2B15F21EE17E7003457F3 /* LoginViewModel.h */,
+				9CB2B16021EE17FF003457F3 /* LoginViewModel.m */,
+				9CB2B16221EE1811003457F3 /* SignInViewModel.h */,
+				9CB2B16321EE181F003457F3 /* SignInViewModel.m */,
+				9CB2B16521EE182B003457F3 /* RegisterViewModel.h */,
+				9CB2B16621EE183A003457F3 /* RegisterViewModel.m */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
