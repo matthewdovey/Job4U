@@ -1,0 +1,34 @@
+//
+//  AppCoordinator.m
+//  Job4U
+//
+//  Created by Matthew Dovey on 14/01/2019.
+//  Copyright © 2019 Matthew Dovey. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "AppCoordinator.h"
+#import "ViewController.h"
+
+@interface AppCoordinator ()
+
+@property (nonatomic, retain) UIWindow *window;
+
+@end
+
+@implementation AppCoordinator
+
+- (id)initWithWindow:(UIWindow*)window {
+    self = [super init];
+    if (self) {
+        if (_window == nil) {_window = window;}
+    }
+    return self;
+}
+
+- (void)start {
+    ViewController *rootViewController = [[ViewController alloc] init];
+    _window.rootViewController = rootViewController;
+}
+
+@end

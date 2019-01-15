@@ -14,6 +14,7 @@
 		9CB2B11D21ED201B003457F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB2B11B21ED201B003457F3 /* LaunchScreen.storyboard */; };
 		9CB2B12021ED201B003457F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B11F21ED201B003457F3 /* main.m */; };
 		9CB2B12A21ED201C003457F3 /* Job4UTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B12921ED201C003457F3 /* Job4UTests.m */; };
+		9CB2B14621ED5183003457F3 /* AppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B14521ED5183003457F3 /* AppCoordinator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,9 @@
 		9CB2B12521ED201C003457F3 /* Job4UTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Job4UTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB2B12921ED201C003457F3 /* Job4UTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Job4UTests.m; sourceTree = "<group>"; };
 		9CB2B12B21ED201C003457F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CB2B14321ED4ECD003457F3 /* Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
+		9CB2B14421ED506B003457F3 /* AppCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppCoordinator.h; sourceTree = "<group>"; };
+		9CB2B14521ED5183003457F3 /* AppCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCoordinator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		9CB2B10F21ED2019003457F3 /* Job4U */ = {
 			isa = PBXGroup;
 			children = (
+				9CB2B13E21ED4ABB003457F3 /* Coordinator */,
 				9CB2B11021ED2019003457F3 /* AppDelegate.h */,
 				9CB2B11121ED2019003457F3 /* AppDelegate.m */,
 				9CB2B11321ED2019003457F3 /* ViewController.h */,
@@ -101,6 +106,16 @@
 				9CB2B12B21ED201C003457F3 /* Info.plist */,
 			);
 			path = Job4UTests;
+			sourceTree = "<group>";
+		};
+		9CB2B13E21ED4ABB003457F3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9CB2B14321ED4ECD003457F3 /* Coordinator.h */,
+				9CB2B14421ED506B003457F3 /* AppCoordinator.h */,
+				9CB2B14521ED5183003457F3 /* AppCoordinator.m */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +220,7 @@
 			files = (
 				9CB2B11521ED2019003457F3 /* ViewController.m in Sources */,
 				9CB2B12021ED201B003457F3 /* main.m in Sources */,
+				9CB2B14621ED5183003457F3 /* AppCoordinator.m in Sources */,
 				9CB2B11221ED2019003457F3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
