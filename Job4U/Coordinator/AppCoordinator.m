@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "AppCoordinator.h"
-#import "ViewController.h"
+#import "LoginViewController.h"
 
 @interface AppCoordinator ()
 
@@ -27,7 +27,7 @@
 }
 
 - (void)start {
-    ViewController *rootViewController = [[ViewController alloc] init];
+    LoginViewController *rootViewController = [[LoginViewController alloc] init];
     _window.rootViewController = rootViewController;
 }
 
