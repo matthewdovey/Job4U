@@ -9,10 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "AppCoordinator.h"
 #import "LoginViewController.h"
+#import "DashboardCoordinator.h"
 
 @interface AppCoordinator ()
 
 @property (nonatomic, retain) UIWindow *window;
+@property (nonatomic, retain) DashboardCoordinator *dashboardCoordinator;
 
 @end
 
