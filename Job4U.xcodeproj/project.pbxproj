@@ -23,6 +23,7 @@
 		9CB2B16721EE183A003457F3 /* RegisterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B16621EE183A003457F3 /* RegisterViewModel.m */; };
 		9CB2B16D21EE76B7003457F3 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B16C21EE76B7003457F3 /* DashboardViewController.m */; };
 		9CB2B17021EE76E6003457F3 /* DashboardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B16F21EE76E6003457F3 /* DashboardViewModel.m */; };
+		9CB2B17321EE7AEE003457F3 /* DashboardCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B17221EE7AEE003457F3 /* DashboardCoordinator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		9CB2B16C21EE76B7003457F3 /* DashboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
 		9CB2B16E21EE76D0003457F3 /* DashboardViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashboardViewModel.h; sourceTree = "<group>"; };
 		9CB2B16F21EE76E6003457F3 /* DashboardViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardViewModel.m; sourceTree = "<group>"; };
+		9CB2B17121EE7ADE003457F3 /* DashboardCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashboardCoordinator.h; sourceTree = "<group>"; };
+		9CB2B17221EE7AEE003457F3 /* DashboardCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardCoordinator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 				9CB2B14321ED4ECD003457F3 /* Coordinator.h */,
 				9CB2B14421ED506B003457F3 /* AppCoordinator.h */,
 				9CB2B14521ED5183003457F3 /* AppCoordinator.m */,
+				9CB2B17121EE7ADE003457F3 /* DashboardCoordinator.h */,
+				9CB2B17221EE7AEE003457F3 /* DashboardCoordinator.m */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				9CB2B16421EE181F003457F3 /* SignInViewModel.m in Sources */,
 				9CB2B12021ED201B003457F3 /* main.m in Sources */,
 				9CB2B16D21EE76B7003457F3 /* DashboardViewController.m in Sources */,
+				9CB2B17321EE7AEE003457F3 /* DashboardCoordinator.m in Sources */,
 				9CB2B16721EE183A003457F3 /* RegisterViewModel.m in Sources */,
 				9CB2B14621ED5183003457F3 /* AppCoordinator.m in Sources */,
 				9CB2B15821EE0618003457F3 /* RegisterViewController.m in Sources */,
