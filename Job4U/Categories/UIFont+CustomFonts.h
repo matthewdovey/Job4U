@@ -6,8 +6,8 @@
 //  Copyright © 2019 Matthew Dovey. All rights reserved.
 //
 
-#ifndef UIFont_CustomFonts_h
-#define UIFont_CustomFonts_h
+#import <UIKit/UIKit.h>
 
+@interface UIFont (CustomFont)
 
-#endif /* UIFont_CustomFonts_h */
+@end

@@ -6,6 +6,8 @@
 //  Copyright © 2019 Matthew Dovey. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "UIFont+CustomFont.h"
 
+@implementation UIFont (CustomFont)
 
+@end
