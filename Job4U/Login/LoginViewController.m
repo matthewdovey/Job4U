@@ -10,6 +10,8 @@
 
 @interface LoginViewController ()
 
+@property (nonatomic, strong) UIViewController *childViewController;
+
 @end
 
 @implementation LoginViewController
@@ -17,6 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)proceedToLogin:(id)sender {
+}
+
+- (IBAction)proceedToRegister:(id)sender {
 }
 
 
