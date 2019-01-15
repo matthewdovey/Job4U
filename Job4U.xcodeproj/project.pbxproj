@@ -129,12 +129,7 @@
 		9CB2B13421ED2683003457F3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				9CB2B11321ED2019003457F3 /* LoginViewController.h */,
-				9CB2B11421ED2019003457F3 /* LoginViewController.m */,
-				9CB2B15321EE04AA003457F3 /* SignInViewController.m */,
-				9CB2B15521EE04BD003457F3 /* SignInViewController.h */,
-				9CB2B15621EE0608003457F3 /* RegisterViewController.h */,
-				9CB2B15721EE0618003457F3 /* RegisterViewController.m */,
+				9CB2B16821EE1880003457F3 /* ViewControllers */,
 				9CB2B15F21EE17E7003457F3 /* LoginViewModel.h */,
 				9CB2B16021EE17FF003457F3 /* LoginViewModel.m */,
 				9CB2B16221EE1811003457F3 /* SignInViewModel.h */,
@@ -162,6 +157,19 @@
 				9CB2B14521ED5183003457F3 /* AppCoordinator.m */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9CB2B16821EE1880003457F3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CB2B11321ED2019003457F3 /* LoginViewController.h */,
+				9CB2B11421ED2019003457F3 /* LoginViewController.m */,
+				9CB2B15521EE04BD003457F3 /* SignInViewController.h */,
+				9CB2B15321EE04AA003457F3 /* SignInViewController.m */,
+				9CB2B15621EE0608003457F3 /* RegisterViewController.h */,
+				9CB2B15721EE0618003457F3 /* RegisterViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
