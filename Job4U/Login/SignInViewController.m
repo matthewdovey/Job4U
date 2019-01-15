@@ -7,3 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "SignInViewController.h"
+
+@interface SignInViewController ()
+
+@end
+
+@implementation SignInViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+@end

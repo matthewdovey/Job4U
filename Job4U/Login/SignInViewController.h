@@ -6,8 +6,8 @@
 //  Copyright © 2019 Matthew Dovey. All rights reserved.
 //
 
-#ifndef SignInViewController_h
-#define SignInViewController_h
+#import <UIKit/UIKit.h>
 
+@interface SignInViewController : UIViewController
 
-#endif /* SignInViewController_h */
+@end
