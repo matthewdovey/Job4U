@@ -18,7 +18,6 @@
 		9CB2B14621ED5183003457F3 /* AppCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B14521ED5183003457F3 /* AppCoordinator.m */; };
 		9CB2B15421EE04AA003457F3 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B15321EE04AA003457F3 /* SignInViewController.m */; };
 		9CB2B15821EE0618003457F3 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B15721EE0618003457F3 /* RegisterViewController.m */; };
-		9CB2B15B21EE1170003457F3 /* SplashScreenCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B15A21EE1170003457F3 /* SplashScreenCoordinator.m */; };
 		9CB2B15E21EE12AB003457F3 /* SplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B15D21EE12AB003457F3 /* SplashScreenViewController.m */; };
 		9CB2B16121EE17FF003457F3 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B16021EE17FF003457F3 /* LoginViewModel.m */; };
 		9CB2B16421EE181F003457F3 /* SignInViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B16321EE181F003457F3 /* SignInViewModel.m */; };
@@ -61,8 +60,6 @@
 		9CB2B15521EE04BD003457F3 /* SignInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		9CB2B15621EE0608003457F3 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		9CB2B15721EE0618003457F3 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
-		9CB2B15921EE115C003457F3 /* SplashScreenCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashScreenCoordinator.h; sourceTree = "<group>"; };
-		9CB2B15A21EE1170003457F3 /* SplashScreenCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashScreenCoordinator.m; sourceTree = "<group>"; };
 		9CB2B15C21EE128F003457F3 /* SplashScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashScreenViewController.h; sourceTree = "<group>"; };
 		9CB2B15D21EE12AB003457F3 /* SplashScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashScreenViewController.m; sourceTree = "<group>"; };
 		9CB2B15F21EE17E7003457F3 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
@@ -170,8 +167,6 @@
 				9CB2B14521ED5183003457F3 /* AppCoordinator.m */,
 				9CB2B17121EE7ADE003457F3 /* DashboardCoordinator.h */,
 				9CB2B17221EE7AEE003457F3 /* DashboardCoordinator.m */,
-				9CB2B15921EE115C003457F3 /* SplashScreenCoordinator.h */,
-				9CB2B15A21EE1170003457F3 /* SplashScreenCoordinator.m */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -329,7 +324,6 @@
 				9CB2B13D21ED389E003457F3 /* LoginButton.m in Sources */,
 				9CB2B15E21EE12AB003457F3 /* SplashScreenViewController.m in Sources */,
 				9CB2B12021ED201B003457F3 /* main.m in Sources */,
-				9CB2B15B21EE1170003457F3 /* SplashScreenCoordinator.m in Sources */,
 				9CB2B16421EE181F003457F3 /* SignInViewModel.m in Sources */,
 				9CB2B12021ED201B003457F3 /* main.m in Sources */,
 				9CB2B16D21EE76B7003457F3 /* DashboardViewController.m in Sources */,
