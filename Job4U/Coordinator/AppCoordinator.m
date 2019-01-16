@@ -9,7 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "AppCoordinator.h"
 #import "LoginViewController.h"
+<<<<<<< HEAD
 #import "DashboardCoordinator.h"
+=======
+#import "SplashScreenViewController.h"
+>>>>>>> master
 
 @interface AppCoordinator ()
 
@@ -29,6 +33,20 @@
 }
 
 - (void)start {
+    self.showSplashScreen;
+}
+
+- (void)showSplashScreen {
+    SplashScreenViewController *viewController = [[SplashScreenViewController alloc] init];
+    viewController.delegate = self;
+    _window.rootViewController = viewController;
+}
+
+- (void)splashHasFinished {
+    self.showLoginScreen;
+}
+
+- (void)showLoginScreen {
     LoginViewController *rootViewController = [[LoginViewController alloc] init];
     _window.rootViewController = rootViewController;
 }
