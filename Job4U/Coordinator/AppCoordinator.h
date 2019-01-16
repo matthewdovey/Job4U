@@ -10,7 +10,7 @@
 #import "Coordinator.h"
 #import "SplashScreenDelegate.h"
 
-@interface AppCoordinator : NSObject <Coordinator, SplashScreenDelegate>
+@interface AppCoordinator : NSObject <Coordinator>
 @property (nonatomic, retain) UIViewController *rootViewController;
 - (id)initWithWindow:(UIWindow*)window;
 @end
