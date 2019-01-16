@@ -31,4 +31,8 @@
     _window.rootViewController = rootViewController;
 }
 
+- (void)showSplashScreen {
+    
+}
+
 @end
