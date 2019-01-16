@@ -78,6 +78,7 @@
 		9CB2B17521EEB711003457F3 /* SplashScreenDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashScreenDelegate.h; sourceTree = "<group>"; };
 		9CB2B17621EFDA4D003457F3 /* LoginCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginCoordinator.h; sourceTree = "<group>"; };
 		9CB2B17721EFDA59003457F3 /* LoginCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginCoordinator.m; sourceTree = "<group>"; };
+		9CB2B17B21EFEA40003457F3 /* SignInDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +209,7 @@
 				9CB2B15321EE04AA003457F3 /* SignInViewController.m */,
 				9CB2B16221EE1811003457F3 /* SignInViewModel.h */,
 				9CB2B16321EE181F003457F3 /* SignInViewModel.m */,
+				9CB2B17B21EFEA40003457F3 /* SignInDelegate.h */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
