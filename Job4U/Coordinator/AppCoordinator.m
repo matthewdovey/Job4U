@@ -9,11 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "AppCoordinator.h"
 #import "LoginViewController.h"
-<<<<<<< HEAD
 #import "DashboardCoordinator.h"
-=======
 #import "SplashScreenViewController.h"
->>>>>>> master
 
 @interface AppCoordinator ()
 
