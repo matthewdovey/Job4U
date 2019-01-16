@@ -12,6 +12,7 @@
 
 @interface LoginViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (nonatomic, strong) UIViewController *childViewController;
 
 @end
@@ -20,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [_titleLabel setFont:[UIFont fontWithName:@"AvenirNext-Heavy" size:35]];
 }
 
 - (IBAction)proceedToLogin:(id)sender {

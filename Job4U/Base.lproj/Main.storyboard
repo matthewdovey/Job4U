@@ -21,15 +21,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqk-sp-Flt" userLabel="BackgroundView">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Job4U" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EIp-eX-Wqh" userLabel="TitleTextField">
-                                        <rect key="frame" x="0.0" y="100" width="375" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="fYp-nd-680"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job4U" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qu1-aG-qwR" userLabel="TitleLabel">
+                                        <rect key="frame" x="162" y="150" width="51.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhN-YP-HYp" userLabel="LoginView">
                                         <rect key="frame" x="0.0" y="347" width="375" height="300"/>
                                         <subviews>
@@ -58,13 +55,12 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Qu1-aG-qwR" firstAttribute="top" secondItem="eqk-sp-Flt" secondAttribute="top" constant="150" id="1cT-u1-Z3L"/>
                                     <constraint firstAttribute="bottom" secondItem="AhN-YP-HYp" secondAttribute="top" constant="300" id="6N3-O1-7Tx"/>
-                                    <constraint firstItem="EIp-eX-Wqh" firstAttribute="leading" secondItem="eqk-sp-Flt" secondAttribute="leading" id="Fe6-Df-EJZ"/>
-                                    <constraint firstItem="EIp-eX-Wqh" firstAttribute="top" secondItem="eqk-sp-Flt" secondAttribute="top" constant="100" id="RIZ-Db-Kca"/>
+                                    <constraint firstItem="Qu1-aG-qwR" firstAttribute="centerX" secondItem="eqk-sp-Flt" secondAttribute="centerX" id="81j-ga-vxO"/>
                                     <constraint firstAttribute="trailing" secondItem="AhN-YP-HYp" secondAttribute="trailing" id="TXQ-50-SZD"/>
                                     <constraint firstItem="AhN-YP-HYp" firstAttribute="leading" secondItem="eqk-sp-Flt" secondAttribute="leading" id="e7V-we-q62"/>
                                     <constraint firstAttribute="bottom" secondItem="AhN-YP-HYp" secondAttribute="bottom" id="gtE-KJ-3Ip"/>
-                                    <constraint firstAttribute="trailing" secondItem="EIp-eX-Wqh" secondAttribute="trailing" id="yaC-4g-9OA"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -77,6 +73,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="Qu1-aG-qwR" id="Gho-Rd-Rpi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
