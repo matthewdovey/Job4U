@@ -6,6 +6,7 @@ This in a iOS app that allows companies and individuals looking to advertise or 
 
 * MVVM (Model-View-Viewmodel)
 * Coordinator Pattern
+* Child View Controllers
 
 ## Built With
 
