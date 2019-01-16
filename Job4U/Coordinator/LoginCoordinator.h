@@ -6,8 +6,10 @@
 //  Copyright © 2019 Matthew Dovey. All rights reserved.
 //
 
-#ifndef LoginCoordinator_h
-#define LoginCoordinator_h
+#import "Coordinator.h"
 
+@interface LoginCoordinator : NSObject <Coordinator>
 
-#endif /* LoginCoordinator_h */
+- (id)initWithNavController:(UINavigationController*)navigationController;
+
+@end
