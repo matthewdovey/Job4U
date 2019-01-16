@@ -18,7 +18,7 @@
 
 @implementation LoginCoordinator
 
-- (id)initWithNavController:(UINavigationController*)navigationController {
+- (id)initWithNavController:(UINavigationController*) navigationController {
     _navigationController = navigationController;
     return self;
 }
