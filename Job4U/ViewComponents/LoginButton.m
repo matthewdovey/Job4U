@@ -11,22 +11,52 @@
 @interface LoginButton ()
 
 @property (nonatomic, readwrite) ButtonState *currentState;
+@property (nonatomic, assign) UIColor* backgroundColor;
+@property (nonatomic, assign) UIColor* fontColor;
 
 @end
 
 @implementation LoginButton
 
-- (id)initWithFrame:(CGRect)frame withBackgroundColor:(UIColor *)backgroundColor {
+- (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self createLoginButton:self withBackgroundColor: UIColor.redColor];
+        if (_fontColor == nil) {_fontColor = UIColor.blackColor;}
+        if (_backgroundColor == nil) {_backgroundColor = UIColor.redColor;}
+        [self createLoginButton:self withBackgroundColor: _backgroundColor withFontColor: _fontColor];
     }
     return self;
 }
 
-- (void)createLoginButton:(LoginButton*)button withBackgroundColor:(UIColor*)backgroundColor {
-    button.frame = CGRectMake(0, 0, 100, 40);
-    button.backgroundColor = backgroundColor;
+- (id)initWithFrame:(CGRect)frame
+withBackgroundColor:(UIColor*)backgroundColor
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        if (_fontColor == nil) {_fontColor = UIColor.blackColor;}
+        [self createLoginButton:self withBackgroundColor: _backgroundColor withFontColor: _fontColor];
+    }
+    return self;
+}
+
+- (id)initWithFrame:(CGRect)frame
+withBackgroundColor:(UIColor *)backgroundColor
+      withFontColor:(UIColor*)fontColor {
+    self = [super initWithFrame:frame];
+    if (self) {
+        if (_fontColor == nil) {_fontColor = fontColor;}
+        if (_backgroundColor == nil) {_backgroundColor = backgroundColor;}
+        [self createLoginButton:self withBackgroundColor: _backgroundColor withFontColor: _fontColor];
+    }
+    return self;
+}
+
+- (void)createLoginButton:(LoginButton*)button
+      withBackgroundColor:(UIColor*)backgroundColor
+            withFontColor:(UIColor*)fontColor
+{
+    [button setFontColor:_fontColor];
+    [button setBackgroundColor:_backgroundColor];
 }
 
 - (ButtonState*) buttonState {
