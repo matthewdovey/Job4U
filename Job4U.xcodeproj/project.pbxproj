@@ -68,6 +68,7 @@
 		9CB2B16321EE181F003457F3 /* SignInViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInViewModel.m; sourceTree = "<group>"; };
 		9CB2B16521EE182B003457F3 /* RegisterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewModel.h; sourceTree = "<group>"; };
 		9CB2B16621EE183A003457F3 /* RegisterViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewModel.m; sourceTree = "<group>"; };
+		9CB2B17521EEB711003457F3 /* SplashScreenDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashScreenDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +110,7 @@
 		9CB2B10F21ED2019003457F3 /* Job4U */ = {
 			isa = PBXGroup;
 			children = (
+				9CB2B17421EEB6ED003457F3 /* SplashScreen */,
 				9CB2B13621ED3519003457F3 /* ViewComponents */,
 				9CB2B13421ED2683003457F3 /* Login */,
 				9CB2B13E21ED4ABB003457F3 /* Coordinator */,
@@ -119,8 +121,6 @@
 				9CB2B11B21ED201B003457F3 /* LaunchScreen.storyboard */,
 				9CB2B11E21ED201B003457F3 /* Info.plist */,
 				9CB2B11F21ED201B003457F3 /* main.m */,
-				9CB2B15C21EE128F003457F3 /* SplashScreenViewController.h */,
-				9CB2B15D21EE12AB003457F3 /* SplashScreenViewController.m */,
 			);
 			path = Job4U;
 			sourceTree = "<group>";
@@ -188,6 +188,16 @@
 				9CB2B16621EE183A003457F3 /* RegisterViewModel.m */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9CB2B17421EEB6ED003457F3 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9CB2B15C21EE128F003457F3 /* SplashScreenViewController.h */,
+				9CB2B15D21EE12AB003457F3 /* SplashScreenViewController.m */,
+				9CB2B17521EEB711003457F3 /* SplashScreenDelegate.h */,
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

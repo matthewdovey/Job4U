@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SplashScreenDelegate.h"
 
-@interface SplashScreenViewController : UIViewController
+@interface SplashScreenViewController : UIViewController <SplashScreenDelegate>
+
+@property (nonatomic, weak) id <SplashScreenDelegate> delegate;
 
 @end

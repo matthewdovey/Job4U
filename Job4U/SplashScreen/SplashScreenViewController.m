@@ -18,6 +18,8 @@
 
 @implementation SplashScreenViewController
 
+@synthesize delegate;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
@@ -31,6 +33,16 @@
     _splashLabel = [[UILabel alloc] initWithFrame:labelRect];
     _splashLabel.text = @"Job4U";
     [_splashLabel setFont:[UIFont fontWithName:@"AvenirNext-Heavy" size:35]];
+    self.animateSplashScreen;
+}
+
+- (void)animateSplashScreen {
+    //TODO: animate splash screen title into view before screen transition
+    self.splashHasFinished;
+}
+
+- (void)splashHasFinished {
+    delegate.splashHasFinished;
 }
 
 @end
