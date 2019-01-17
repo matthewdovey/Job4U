@@ -33,11 +33,15 @@
     _splashLabel = [[UILabel alloc] initWithFrame:labelRect];
     _splashLabel.text = @"Job4U";
     [_splashLabel setFont:[UIFont fontWithName:@"AvenirNext-Heavy" size:35]];
+    [_splashLabel setAlpha:0];
     self.animateSplashScreen;
 }
 
 - (void)animateSplashScreen {
     //TODO: animate splash screen title into view before screen transition
+    [UIView animateWithDuration:5.5f animations:^{
+        [self.splashLabel setAlpha:1];
+    }];
     self.splashHasFinished;
 }
 
