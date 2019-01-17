@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SignInDelegate.h"
 
 @interface SignInViewController : UIViewController
+
+@property (nonatomic, weak) id <SignInDelegate> delegate;
 
 @end
