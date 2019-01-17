@@ -33,25 +33,23 @@
 }
 
 - (void)start {
-    self.showSplashScreen;
+    [self showSplashScreen];
 }
 
 - (void)showSplashScreen {
-    SplashScreenViewController *viewController = [[SplashScreenViewController alloc] init];
-    viewController.delegate = self;
-    _window.rootViewController = viewController;
-    
+    SplashScreenViewController *splashViewController = [[SplashScreenViewController alloc] init];
+    splashViewController.delegate = self;
+    _window.rootViewController = splashViewController;
 }
 
 - (void)splashHasFinished {
-    self.showLoginScreen;
+    [self showLoginScreen];
 }
 
 - (void)showLoginScreen {
     UINavigationController *navigationController = [[UINavigationController alloc] init];
-    LoginCoordinator *loginCoordinator = [[LoginCoordinator alloc] initWithNavController:navigationController];
-    _loginCoordinator = loginCoordinator;
-    loginCoordinator.start;
+    _loginCoordinator = [[LoginCoordinator alloc] initWithNavController:navigationController];
+    [_loginCoordinator start];
 }
 
 @end
