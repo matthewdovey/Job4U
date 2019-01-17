@@ -24,6 +24,8 @@
 
 @implementation SignInViewController
 
+@synthesize delegate;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
@@ -94,7 +96,8 @@
 }
 
 - (void)signIn {
-    //TODO: setup dashboard and authentication
+    //TODO: setup authentication
+    delegate.successfulSignIn;
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {

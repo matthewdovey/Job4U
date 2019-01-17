@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "AppCoordinator.h"
 #import "LoginViewController.h"
+#import "LoginCoordinator.h"
 #import "SplashScreenViewController.h"
 
-@interface AppCoordinator ()
+@interface AppCoordinator () <SplashScreenDelegate>
 
 @property (nonatomic, retain) UIWindow *window;
+@property (nonatomic, retain) LoginCoordinator *loginCoordinator;
 
 @end
 
@@ -22,28 +24,32 @@
 - (id)initWithWindow:(UIWindow*)window {
     self = [super init];
     if (self) {
-        if (_window == nil) {_window = window;}
+        if (_window == nil) {
+            _window = window;
+            [_window makeKeyAndVisible];
+        }
     }
     return self;
 }
 
 - (void)start {
-    self.showSplashScreen;
+    [self showSplashScreen];
 }
 
 - (void)showSplashScreen {
-    SplashScreenViewController *viewController = [[SplashScreenViewController alloc] init];
-    viewController.delegate = self;
-    _window.rootViewController = viewController;
+    SplashScreenViewController *splashViewController = [[SplashScreenViewController alloc] init];
+    splashViewController.delegate = self;
+    _window.rootViewController = splashViewController;
 }
 
 - (void)splashHasFinished {
-    self.showLoginScreen;
+    [self showLoginScreen];
 }
 
 - (void)showLoginScreen {
-    LoginViewController *rootViewController = [[LoginViewController alloc] init];
-    _window.rootViewController = rootViewController;
+    UINavigationController *navigationController = [[UINavigationController alloc] init];
+    _loginCoordinator = [[LoginCoordinator alloc] initWithNavController:navigationController];
+    [_loginCoordinator start];
 }
 
 @end

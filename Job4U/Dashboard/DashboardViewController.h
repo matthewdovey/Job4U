@@ -1,5 +1,5 @@
 //
-//  SignInViewController.h
+//  DashboardViewController.h
 //  Job4U
 //
 //  Created by Matthew Dovey on 15/01/2019.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SignInViewController : UIViewController
+@interface DashboardViewController : UIViewController
 
 @end

@@ -1,5 +1,5 @@
 //
-//  SplashScreenCoordinator.m
+//  DasboardViewModel.m
 //  Job4U
 //
 //  Created by Matthew Dovey on 15/01/2019.
@@ -7,16 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SplashScreenCoordinator.h"
+#import "DashboardViewModel.h"
 
-@interface SplashScreenCoordinator ()
+@interface DashboardViewModel ()
 
 @end
 
-@implementation SplashScreenCoordinator
+@implementation DashboardViewModel
 
-- (void)start {
-    
-}
+
 
 @end
