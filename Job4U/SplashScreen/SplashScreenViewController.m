@@ -26,14 +26,25 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    self.setup;
 }
 
 - (void)setup {
     CGRect labelRect = CGRectMake(0.0, 0.0, 200.0, 30.0);
+    
+    int width = self.view.frame.size.width / 2;
+    int height = self.view.frame.size.height / 2;
+    
+    CGPoint centerPoint = CGPointMake(width, height);
+    
     _splashLabel = [[UILabel alloc] initWithFrame:labelRect];
     _splashLabel.text = @"Job4U";
+    _splashLabel.center = centerPoint;
+    _splashLabel.backgroundColor = [UIColor whiteColor];
+    _splashLabel.textColor = [UIColor blackColor];
     [_splashLabel setFont:[UIFont fontWithName:@"AvenirNext-Heavy" size:35]];
     [_splashLabel setAlpha:0];
+    [self.view addSubview:_splashLabel];
     self.animateSplashScreen;
 }
 
