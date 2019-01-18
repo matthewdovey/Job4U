@@ -50,6 +50,7 @@
     UINavigationController *navigationController = [[UINavigationController alloc] init];
     _loginCoordinator = [[LoginCoordinator alloc] initWithNavController:navigationController];
     [_loginCoordinator start];
+    _window.rootViewController = navigationController;
 }
 
 @end
