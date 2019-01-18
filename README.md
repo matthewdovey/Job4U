@@ -8,7 +8,6 @@ Items marked with the (Future) tag are features and patterns that I plan to use 
 
 * MVVM (Model-View-Viewmodel)
 * Coordinator Pattern
-* Child View Controllers
 * Built without storyboard
 
 ## Built With
