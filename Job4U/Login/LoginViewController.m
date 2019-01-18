@@ -13,7 +13,6 @@
 @interface LoginViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (nonatomic, strong) UIViewController *childViewController;
 
 @end
 
@@ -32,13 +31,6 @@
 
 - (IBAction)proceedToRegister:(id)sender {
     [self.delegate showRegisterScreen];
-}
-
-- (void)displayChildViewController:(UIViewController*)viewController {
-    [self addChildViewController:viewController];
-    viewController.view.frame = self.view.frame;
-    [self.view addSubview:viewController.view];
-    [viewController didMoveToParentViewController:self];
 }
 
 @end
