@@ -15,7 +15,7 @@ Items marked with the (Future) tag are features and patterns that I plan to use 
 
 * Carthage Dependency Manager
 * Firebase Analytics / Crashlytics (Future)
-* Snapkit (Future)
+* Snapkit
 
 ## Contributing
 
