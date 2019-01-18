@@ -8,14 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "LoginCoordinator.h"
-#import "SignInViewController.h"
+#import "LoginViewController.h"
 #import "DashboardCoordinator.h"
-#import "SignInDelegate.h"
+#import "LoginDelegate.h"
+#import "SignInCoordinator.h"
 
-@interface LoginCoordinator () <SignInDelegate>
+@interface LoginCoordinator () <LoginDelegate>
 
 @property (nonatomic, strong) UINavigationController *navigationController;
-@property (nonatomic, strong) DashboardCoordinator *dashCoordinator;
+@property (nonatomic, strong) SignInCoordinator *signInCoordinator;
 
 @end
 
@@ -31,18 +32,10 @@
 }
 
 - (void)showLogin {
-    SignInViewController *signInViewController = [[SignInViewController alloc] init];
-    signInViewController.delegate = self;
-    [_navigationController pushViewController:signInViewController animated:YES];
-}
-
-- (void)successfulSignIn {
-    [self showDashboard];
-}
-
-- (void)showDashboard {
-    _dashCoordinator = [[DashboardCoordinator alloc] initWithNavController:_navigationController];
-    _dashCoordinator.start;
+    NSLog(@"login should show");
+    LoginViewController *loginViewController = [[LoginViewController alloc] init];
+    loginViewController.delegate = self;
+    [_navigationController pushViewController:loginViewController animated:YES];
 }
 
 @end
