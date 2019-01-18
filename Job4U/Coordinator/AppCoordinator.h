@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Coordinator.h"
+#import "SplashScreenDelegate.h"
 
 @interface AppCoordinator : NSObject <Coordinator>
 @property (nonatomic, retain) UIViewController *rootViewController;
