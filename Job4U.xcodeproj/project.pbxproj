@@ -25,6 +25,7 @@
 		9CB2B17021EE76E6003457F3 /* DashboardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B16F21EE76E6003457F3 /* DashboardViewModel.m */; };
 		9CB2B17321EE7AEE003457F3 /* DashboardCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B17221EE7AEE003457F3 /* DashboardCoordinator.m */; };
 		9CB2B17821EFDA59003457F3 /* LoginCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B17721EFDA59003457F3 /* LoginCoordinator.m */; };
+		9CC5944121F2829D000EA2BA /* SignInCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5944021F2829D000EA2BA /* SignInCoordinator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		9CB2B17721EFDA59003457F3 /* LoginCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginCoordinator.m; sourceTree = "<group>"; };
 		9CB2B17B21EFEA40003457F3 /* SignInDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInDelegate.h; sourceTree = "<group>"; };
 		9CC5943E21F280F3000EA2BA /* LoginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginDelegate.h; sourceTree = "<group>"; };
+		9CC5943F21F2828B000EA2BA /* SignInCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInCoordinator.h; sourceTree = "<group>"; };
+		9CC5944021F2829D000EA2BA /* SignInCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInCoordinator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,8 @@
 				9CB2B17221EE7AEE003457F3 /* DashboardCoordinator.m */,
 				9CB2B17621EFDA4D003457F3 /* LoginCoordinator.h */,
 				9CB2B17721EFDA59003457F3 /* LoginCoordinator.m */,
+				9CC5943F21F2828B000EA2BA /* SignInCoordinator.h */,
+				9CC5944021F2829D000EA2BA /* SignInCoordinator.m */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 				9CB2B17821EFDA59003457F3 /* LoginCoordinator.m in Sources */,
 				9CB2B16721EE183A003457F3 /* RegisterViewModel.m in Sources */,
 				9CB2B14621ED5183003457F3 /* AppCoordinator.m in Sources */,
+				9CC5944121F2829D000EA2BA /* SignInCoordinator.m in Sources */,
 				9CB2B15821EE0618003457F3 /* RegisterViewController.m in Sources */,
 				9CB2B15421EE04AA003457F3 /* SignInViewController.m in Sources */,
 				9CB2B11221ED2019003457F3 /* AppDelegate.m in Sources */,
