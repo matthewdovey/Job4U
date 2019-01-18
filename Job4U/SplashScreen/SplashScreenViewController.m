@@ -49,11 +49,11 @@
 }
 
 - (void)animateSplashScreen {
-    //TODO: animate splash screen title into view before screen transition
-    [UIView animateWithDuration:5.5f animations:^{
+    [UIView animateWithDuration:4.0f animations:^{
         [self.splashLabel setAlpha:1];
+    } completion:^(BOOL finished){
+        self.splashHasFinished;
     }];
-    self.splashHasFinished;
 }
 
 - (void)splashHasFinished {
