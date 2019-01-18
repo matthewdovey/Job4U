@@ -21,6 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    window.backgroundColor = [UIColor redColor];
     
     self.appCoordinator = [[AppCoordinator alloc] initWithWindow:window];
     [self.appCoordinator start];
