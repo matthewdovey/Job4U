@@ -19,19 +19,19 @@
 
 @implementation LoginViewController
 
+@synthesize delegate;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [_titleLabel setFont:[UIFont fontWithName:@"AvenirNext-Heavy" size:35]];
 }
 
 - (IBAction)proceedToLogin:(id)sender {
-    UIViewController *viewController = [[SignInViewController alloc] init];
-    [self displayChildViewController: viewController];
+    [self.delegate showSignInScreen];
 }
 
 - (IBAction)proceedToRegister:(id)sender {
-    UIViewController *viewController = [[RegisterViewController alloc] init];
-    [self displayChildViewController:viewController];
+    [self.delegate showRegisterScreen];
 }
 
 - (void)displayChildViewController:(UIViewController*)viewController {
