@@ -34,6 +34,7 @@
 - (void)showSignInScreen {
     SignInViewController *signInViewController = [[SignInViewController alloc] init];
     SignInViewModel *signInViewModel = [[SignInViewModel alloc] init];
+    signInViewController.delegate = self;
     [_navigationController pushViewController:signInViewController animated:YES];
 }
 
