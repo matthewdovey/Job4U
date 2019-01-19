@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "LoginCoordinator.h"
 #import "LoginViewController.h"
+#import "LoginViewModel.h"
 #import "DashboardCoordinator.h"
 #import "LoginDelegate.h"
 #import "SignInCoordinator.h"
@@ -28,14 +29,25 @@
 }
 
 - (void)start {
-    self.showLogin;
+    [self showLogin];
 }
 
 - (void)showLogin {
     NSLog(@"login should show");
     LoginViewController *loginViewController = [[LoginViewController alloc] init];
     loginViewController.delegate = self;
+    LoginViewModel *viewModel = [[LoginViewModel alloc] init];
+    [loginViewController setViewModel:viewModel];
     [_navigationController pushViewController:loginViewController animated:YES];
+}
+
+- (void)showSignInScreen {
+    _signInCoordinator = [[SignInCoordinator alloc] initWithNavController:_navigationController];
+    [_signInCoordinator start];
+}
+
+- (void)showRegisterScreen {
+    //TODO: setup registration screen
 }
 
 @end
