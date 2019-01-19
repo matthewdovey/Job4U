@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "LoginDelegate.h"
+#import "LoginViewModel.h"
 
 @interface LoginViewController : UIViewController
 
 @property (nonatomic, weak) id<LoginDelegate> delegate;
+
+- (void)setViewModel:(LoginViewModel*) loginViewModel;
 
 @end
 
