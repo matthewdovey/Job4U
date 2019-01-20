@@ -6,8 +6,8 @@
 //  Copyright © 2019 Matthew Dovey. All rights reserved.
 //
 
-@interface RegisterDelegate <NSObject>
+@protocol RegisterDelegate <NSObject>
 
-- (void)successfulRegister;
+- (void)successfulRegistration;
 
 @end
