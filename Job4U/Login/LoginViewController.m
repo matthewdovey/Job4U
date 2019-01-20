@@ -65,6 +65,10 @@
     _registerButton = [[UIButton alloc] initWithFrame:rect];
     [_registerButton setBackgroundColor:[UIColor whiteColor]];
     [_registerButton addTarget:self action:@selector(proceedToRegister:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_containerView addSubview:_titleLabel];
+    [_containerView addSubview:_signInButton];
+    [_containerView addSubview:_registerButton];
 }
 
 - (void)setupStyling {
