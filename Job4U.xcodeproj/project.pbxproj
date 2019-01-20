@@ -26,6 +26,7 @@
 		9CB2B17321EE7AEE003457F3 /* DashboardCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B17221EE7AEE003457F3 /* DashboardCoordinator.m */; };
 		9CB2B17821EFDA59003457F3 /* LoginCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB2B17721EFDA59003457F3 /* LoginCoordinator.m */; };
 		9CC5944121F2829D000EA2BA /* SignInCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5944021F2829D000EA2BA /* SignInCoordinator.m */; };
+		9CC5944421F4D715000EA2BA /* RegisterCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5944321F4D715000EA2BA /* RegisterCoordinator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,9 @@
 		9CC5943E21F280F3000EA2BA /* LoginDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginDelegate.h; sourceTree = "<group>"; };
 		9CC5943F21F2828B000EA2BA /* SignInCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInCoordinator.h; sourceTree = "<group>"; };
 		9CC5944021F2829D000EA2BA /* SignInCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignInCoordinator.m; sourceTree = "<group>"; };
+		9CC5944221F4D6F6000EA2BA /* RegisterCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterCoordinator.h; sourceTree = "<group>"; };
+		9CC5944321F4D715000EA2BA /* RegisterCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterCoordinator.m; sourceTree = "<group>"; };
+		9CC5944521F4DA78000EA2BA /* RegisterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,8 @@
 				9CB2B17721EFDA59003457F3 /* LoginCoordinator.m */,
 				9CC5943F21F2828B000EA2BA /* SignInCoordinator.h */,
 				9CC5944021F2829D000EA2BA /* SignInCoordinator.m */,
+				9CC5944221F4D6F6000EA2BA /* RegisterCoordinator.h */,
+				9CC5944321F4D715000EA2BA /* RegisterCoordinator.m */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -225,6 +231,7 @@
 				9CB2B15721EE0618003457F3 /* RegisterViewController.m */,
 				9CB2B16521EE182B003457F3 /* RegisterViewModel.h */,
 				9CB2B16621EE183A003457F3 /* RegisterViewModel.m */,
+				9CC5944521F4DA78000EA2BA /* RegisterDelegate.h */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -333,6 +340,7 @@
 				9CB2B17021EE76E6003457F3 /* DashboardViewModel.m in Sources */,
 				9CB2B13D21ED389E003457F3 /* LoginButton.m in Sources */,
 				9CB2B15E21EE12AB003457F3 /* SplashScreenViewController.m in Sources */,
+				9CC5944421F4D715000EA2BA /* RegisterCoordinator.m in Sources */,
 				9CB2B12021ED201B003457F3 /* main.m in Sources */,
 				9CB2B16421EE181F003457F3 /* SignInViewModel.m in Sources */,
 				9CB2B12021ED201B003457F3 /* main.m in Sources */,
