@@ -6,7 +6,7 @@ Items marked with the (Future) tag are features and patterns that I plan to use 
 
 ## Architectural Patterns Used
 
-* MVVM (Model-View-Viewmodel)
+* MVVM+C (Model-View-Viewmodel + Coordinator)
 * Coordinator Pattern
 * Built without storyboard
 
