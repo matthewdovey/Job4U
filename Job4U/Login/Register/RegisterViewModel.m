@@ -15,6 +15,28 @@
 
 @implementation RegisterViewModel
 
+- (NSString*)getButtonTitle {
+    return @"Register";
+}
 
+- (NSString*)getFirstNamePlaceholder {
+    return @"First Name";
+}
+
+- (NSString*)getSurnamePlaceholder {
+    return @"Surname";
+}
+
+- (NSString*)getUsernamePlaceholder {
+    return @"Username";
+}
+
+- (NSString*)getPasswordPlaceholder {
+    return @"Password";
+}
+
+- (NSString*)getConfirmPlaceholder {
+    return @"Password";
+}
 
 @end
