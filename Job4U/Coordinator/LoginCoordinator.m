@@ -13,11 +13,13 @@
 #import "DashboardCoordinator.h"
 #import "LoginDelegate.h"
 #import "SignInCoordinator.h"
+#import "RegisterCoordinator.h"
 
 @interface LoginCoordinator () <LoginDelegate>
 
 @property (nonatomic, strong) UINavigationController *navigationController;
 @property (nonatomic, strong) SignInCoordinator *signInCoordinator;
+@property (nonatomic, strong) RegisterCoordinator *registerCoordinator;
 
 @end
 
@@ -33,7 +35,6 @@
 }
 
 - (void)showLogin {
-    NSLog(@"login should show");
     LoginViewController *loginViewController = [[LoginViewController alloc] init];
     loginViewController.delegate = self;
     LoginViewModel *viewModel = [[LoginViewModel alloc] init];
@@ -47,7 +48,8 @@
 }
 
 - (void)showRegisterScreen {
-    //TODO: setup registration screen
+    _registerCoordinator = [[RegisterCoordinator alloc] initWithNavController:_navigationController];
+    [_registerCoordinator start];
 }
 
 @end
