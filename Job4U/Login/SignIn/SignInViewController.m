@@ -19,12 +19,14 @@
 @property (nonatomic, strong) UITextField *usernameTextField;
 @property (nonatomic, strong) UITextField *passwordTextField;
 @property (nonatomic, strong) UIButton *signInButton;
+@property (nonatomic, strong) SignInViewModel *signInViewModel;
 
 @end
 
 @implementation SignInViewController
 
 @synthesize delegate;
+@synthesize signInViewModel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];

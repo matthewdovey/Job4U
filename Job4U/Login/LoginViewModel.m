@@ -15,6 +15,16 @@
 
 @implementation LoginViewModel
 
+- (NSString*) getAppTitle {
+    return @"Job4U";
+}
 
+- (NSString*) getSignInTitle {
+    return @"Sign In";
+}
+
+- (NSString*) getRegisterTitle {
+    return @"Register";
+}
 
 @end

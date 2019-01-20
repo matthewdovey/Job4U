@@ -8,4 +8,8 @@
 
 @interface LoginViewModel : NSObject
 
+@property (nonatomic, getter=getAppTitle) NSString *appTitle;
+@property (nonatomic, getter=getSignInTitle) NSString *signInTittle;
+@property (nonatomic, getter=getRegisterTitle) NSString *registerTitle;
+
 @end
