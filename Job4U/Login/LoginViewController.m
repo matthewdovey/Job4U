@@ -28,13 +28,15 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self createContainer];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setup];
     [self.view setBackgroundColor:[UIColor grayColor]];
+    [self createContainer];
+    [self setup];
+    [self setupConstraints];
+    [self setupStyling];
 }
 
 - (void)setViewModel:(LoginViewModel *)viewModel {
@@ -51,11 +53,9 @@
 }
 
 - (void)setup {
-    CGRect rect = CGRectMake(0, 0, 200, 30);
+    CGRect rect = CGRectMake(0, 0, 200, 40);
     
     _titleLabel = [[UILabel alloc] initWithFrame:rect];
-    [_titleLabel setText:@"Job4U"];
-    [_titleLabel setFont:[UIFont fontWithName:@"AvenirNext-Heavy" size:35]];
     [_titleLabel setBackgroundColor:[UIColor whiteColor]];
     
     _signInButton = [[UIButton alloc] initWithFrame:rect];
@@ -64,10 +64,27 @@
     
     _registerButton = [[UIButton alloc] initWithFrame:rect];
     [_registerButton setBackgroundColor:[UIColor whiteColor]];
+    [_registerButton addTarget:self action:@selector(proceedToRegister:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_containerView addSubview:_titleLabel];
+    [_containerView addSubview:_signInButton];
+    [_containerView addSubview:_registerButton];
 }
 
 - (void)setupStyling {
+    [_titleLabel setText:@"Job4U"];
+    [_titleLabel setFont:[UIFont fontWithName:@"AvenirNext-Heavy" size:35]];
     
+    [_signInButton setTitle:@"Sign In" forState:UIControlStateNormal];
+    [_signInButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_signInButton setBackgroundColor:[UIColor blueColor]];
+    [_signInButton setFont:[UIFont fontWithName:@"AvenirNext-Heavy" size:20]];
+    
+    [_registerButton setTitle:@"Register" forState:UIControlStateNormal];
+    [_registerButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_registerButton setBackgroundColor:[UIColor blueColor]];
+    [_registerButton setFont:[UIFont fontWithName:@"AvenirNext-Heavy" size:20]];
+    if (loginViewModel != nil) {}
 }
 
 - (void)createContainer {
@@ -75,21 +92,19 @@
     [_containerView setBackgroundColor:[UIColor purpleColor]];
     [_containerView setFrame:self.view.frame];
     [self.view addSubview:_containerView];
-    
-    int width = self.view.frame.size.width / 2;
-    int height = self.view.frame.size.height / 2;
-    
-    CGPoint centerPoint = CGPointMake(width, height);
-    
-    [_containerView addSubview:_titleLabel];
-    [_containerView addSubview:_signInButton];
-    [_containerView addSubview:_registerButton];
-    
-    _signInButton.center = centerPoint;
 }
 
 - (void)setupConstraints {
-
+    int width = self.view.frame.size.width / 2;
+    int height = self.view.frame.size.height / 2;
+    
+    CGPoint titleCenter = CGPointMake(width, height - 100);
+    CGPoint signInCenterPoint = CGPointMake(width, height);
+    CGPoint registerCenterPoint = CGPointMake(width, height + 60);
+    
+    _titleLabel.center = titleCenter;
+    _signInButton.center = signInCenterPoint;
+    _registerButton.center = registerCenterPoint;
 }
 
 @end
