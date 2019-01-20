@@ -12,5 +12,5 @@
 
 @interface AppCoordinator : NSObject <Coordinator>
 @property (nonatomic, retain) UIViewController *rootViewController;
-- (id)initWithWindow:(UIWindow*)window;
+- (id)initWithWindow: (UIWindow*) window;
 @end

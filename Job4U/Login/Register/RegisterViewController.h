@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RegisterDelegate.h"
+#import "RegisterViewModel.h"
 
 @interface RegisterViewController : UIViewController
+
+@property (nonatomic, weak) id <RegisterDelegate> delegate;
+
+- (void)setViewModel:(RegisterViewModel*) viewModel;
 
 @end

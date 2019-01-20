@@ -89,9 +89,8 @@
 }
 
 - (void)createContainer {
-    _containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
+    _containerView = [[UIView alloc] initWithFrame:self.view.frame];
     [_containerView setBackgroundColor:[UIColor purpleColor]];
-    [_containerView setFrame:self.view.frame];
     [self.view addSubview:_containerView];
 }
 

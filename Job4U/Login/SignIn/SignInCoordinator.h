@@ -10,6 +10,6 @@
 
 @interface SignInCoordinator : NSObject <Coordinator>
 
-- (id)initWithNavController:(UINavigationController*)navigationController;
+- (id)initWithNavController: (UINavigationController*) navigationController;
 
 @end
