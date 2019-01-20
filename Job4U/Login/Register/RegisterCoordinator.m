@@ -12,7 +12,7 @@
 #import "RegisterViewModel.h"
 #import "DashboardCoordinator.h"
 
-@interface RegisterCoordinator ()
+@interface RegisterCoordinator () <RegisterDelegate>
 
 @property (nonatomic, strong) UINavigationController *navigationController;
 @property (nonatomic, strong) DashboardCoordinator *dashboardCoordinator;
@@ -33,10 +33,12 @@
 - (void)showRegisterScreen {
     RegisterViewController *registerViewController = [[RegisterViewController alloc] init];
     RegisterViewModel *viewModel = [[RegisterViewModel alloc] init];
+    [registerViewController setViewModel:viewModel];
+    registerViewController.delegate = self;
     [_navigationController pushViewController:registerViewController animated:YES];
 }
 
-- (void)successfulRegister {
+- (void)successfulRegistration {
     [self showDashBoardScreen];
 }
 
