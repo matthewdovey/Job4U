@@ -72,19 +72,20 @@
 }
 
 - (void)setupStyling {
-    [_titleLabel setText:@"Job4U"];
-    [_titleLabel setFont:[UIFont fontWithName:@"AvenirNext-Heavy" size:35]];
-    
-    [_signInButton setTitle:@"Sign In" forState:UIControlStateNormal];
-    [_signInButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [_signInButton setBackgroundColor:[UIColor blueColor]];
-    [_signInButton setFont:[UIFont fontWithName:@"AvenirNext-Heavy" size:20]];
-    
-    [_registerButton setTitle:@"Register" forState:UIControlStateNormal];
-    [_registerButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [_registerButton setBackgroundColor:[UIColor blueColor]];
-    [_registerButton setFont:[UIFont fontWithName:@"AvenirNext-Heavy" size:20]];
-    if (loginViewModel != nil) {}
+    if (loginViewModel != nil) {
+        [_titleLabel setText:loginViewModel.getAppTitle];
+        [_titleLabel setFont:[UIFont fontWithName:@"AvenirNext-Heavy" size:35]];
+
+        [_signInButton setTitle:loginViewModel.getSignInTitle forState:UIControlStateNormal];
+        [_signInButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_signInButton setBackgroundColor:[UIColor blueColor]];
+        [_signInButton setFont:[UIFont fontWithName:@"AvenirNext-Heavy" size:20]];
+
+        [_registerButton setTitle:loginViewModel.getRegisterTitle forState:UIControlStateNormal];
+        [_registerButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_registerButton setBackgroundColor:[UIColor blueColor]];
+        [_registerButton setFont:[UIFont fontWithName:@"AvenirNext-Heavy" size:20]];
+    }
 }
 
 - (void)createContainer {
